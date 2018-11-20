@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "WhatFont Firefox",
+  "name": "WhatFont",
   "version": "1.0",
 
   "description": "A wrapper for Chengyhin Liu's WhatFont tool",
