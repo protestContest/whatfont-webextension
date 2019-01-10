@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "WhatFont",
-  "version": "1.0",
+  "version": "1.2",
 
   "description": "A wrapper for Chengyhin Liu's WhatFont tool",
   "homepage_url": "https://github.com/chengyin/WhatFont-Bookmarklet",
@@ -12,7 +12,11 @@
   },
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "*://chengyinliu.com/*",
+    "*://typekit.com/*",
+    "*://www.google.com/webfonts/*",
+    "http://fontdeck.com/"
   ],
 
   "browser_action": {

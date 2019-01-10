@@ -1,4 +1,5 @@
 let wf = _whatFont();
+wf.setCSSURL(browser.extension.getURL("") + "/wf.css");
 
 browser.runtime.onMessage.addListener(message => {
   console.log(message);
