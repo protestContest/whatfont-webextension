@@ -16,8 +16,24 @@
   ],
 
   "browser_action": {
-    "default_icon": "icons/whatfont-32.png",
-    "default_title": "WhatFont"
+    "browser_style": true,
+    "default_title": "WhatFont",
+    "default_icon": {
+      "32": "icons/button32.png",
+      "16": "icons/button16.png"
+    },
+    "theme_icons": [
+      {
+        "light": "icons/button32_light.png",
+        "dark": "icons/button32.png",
+        "size": 32
+      },
+      {
+        "light": "icons/button16_light.png",
+        "dark": "icons/button16.png",
+        "size": 16
+      }
+    ]
   },
   "background": {
     "scripts": ["whatfont_button.js"]
