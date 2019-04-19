@@ -1,6 +1,7 @@
-browser.browserAction.onClicked.addListener(() => {
+browser.browserAction.onClicked.addListener(event => {
   browser.tabs.query({active: true}).then(tabs => {
-    if (tabs.length > 0)
-      browser.tabs.sendMessage(tabs[0].id, 'whatfontActivate');
+    const curTab = tabs.find(tab => tab.windowId === event.windowId);
+    if (curTab)
+      browser.tabs.sendMessage(curTab.id, 'whatfontActivate');
   });
 });
